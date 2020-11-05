@@ -47,17 +47,17 @@ end
 
 if board[left_column_win1[0]] == "X" && board[left_column_win1[3]] == "X" &&
   board[left_column_win1[6]] == "X"
-  "X won in the left row"
+  "X won in the left column"
 end
 
 if board[mid_column_win1[1]] == "X" && board[mid_column_win1[4]] == "X" &&
   board[mid_column_win1[7]] == "X"
-  "X won in the middle row"
+  "X won in the middle column"
 end
 
-if board[dright_row_win1[2]] == "X" && board[dright_row_win1[5]] == "X" &&
-  board[dright_row_win1[8]] == "X"
-  "X won in the right row"
+if board[right_column_win1[2]] == "X" && board[right_column_win1[5]] == "X" &&
+  board[right_column_win1[8]] == "X"
+  "X won in the right column"
 end
 
 
