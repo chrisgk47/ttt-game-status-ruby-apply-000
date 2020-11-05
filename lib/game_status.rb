@@ -11,37 +11,17 @@ WIN_COMBINATIONS = [ [0, 1, 2], [3, 4, 5], [6, 7, 8], #rows
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-
-position_1 = board[index_1]
-position_2 = board[index_2]
-position_3 = board[index_3]
-position_4 = board[index_4]
-position_5 = board[index_5]
-position_6 = board[index_6]
-position_7 = board[index_7]
-position_8 = board[index_8]
-
-
-
 def won?(board)
-  WIN_COMBINATIONS.each |win_combo|
-  index_1 = win_combo[0]
-  index_2 = win_combo[1]
-  index_3 = win_combo[2]
-  index_4 = win_combo[3]
-  index_5 = win_combo[4]
-  index_6 = win_combo[5]
-  index_7 = win_combo[6]
-  index_8 = win_combo[7]
-
-  position_1 = board[index_1]
-  position_2 = board[index_2]
-  position_3 = board[index_3]
-  position_4 = board[index_4]
-  position_5 = board[index_5]
-  position_6 = board[index_6]
-  position_7 = board[index_7]
-  position_8 = board[index_8]
+  WIN_COMBINATIONS.each do |win_combo|
+  
+  position_1 = board[win_combo[0]]
+  position_2 = board[win_combo[2]]
+  position_3 = board[win_combo[3]]
+  position_4 = board[win_combo[4]]
+  position_5 = board[win_combo[5]]
+  position_6 = board[win_combo[6]]
+  position_7 = board[win_combo[7]]
+  position_8 = board[win_combo[8]]
 
 
 if position_1 == "X" && position_2 == "X" && position_3 == "X"
