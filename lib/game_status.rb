@@ -12,7 +12,7 @@ WIN_COMBINATIONS = [ [0, 1, 2], [3, 4, 5], [6, 7, 8], #rows
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |win_combo|
+  WIN_COMBINATIONS.detect do |win_combo|
 
   position_1 = board[win_combo[0]]
   position_2 = board[win_combo[2]]
