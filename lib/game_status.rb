@@ -23,8 +23,11 @@ def won?(board)
 
 def full?(board)
   if board.include?(" ")
-    falsey
+    false
   else
     true
   end
 end
+
+def draw?(board)
+  if
