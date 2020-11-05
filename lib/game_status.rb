@@ -8,8 +8,6 @@ WIN_COMBINATIONS = [ [0, 1, 2], [3, 4, 5], [6, 7, 8], # Top row
                    [0, 3, 6], [1, 4, 7], [2, 5, 8],   # Middle Row
                    [0, 4, 8], [2, 4, 6] ]             # Diagonals
 
-def won?(board)
-
 win_index_1 = WIN_COMBINATIONS[0]
 win_index_2 = WIN_COMBINATIONS[1]
 win_index_3 = WIN_COMBINATIONS[2]
@@ -28,8 +26,11 @@ position_6 = board[win_index_6]
 position_7 = board[win_index_7]
 position_8 = board[win_index_8]
 
+
+
+def won?(board)
 if position_1 == "X" && position_2 == "X" && position_3 == "X"
-  return win_combination # return the win_combination indexes that won.
+  return win_combination[1][2][3]# return the win_combination indexes that won.
 else
   false
 end
