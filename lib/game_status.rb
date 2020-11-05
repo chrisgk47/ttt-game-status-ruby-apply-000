@@ -12,11 +12,14 @@ WIN_COMBINATIONS = [ [0, 1, 2], [3, 4, 5], [6, 7, 8], #rows
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |win_combination|
-      if (board[win_combination[0]] == "X" && board[win_combination[1]] == "X" && board[win_combination[2]] == "X") ||
-        (board[win_combination[0]] == "O" && board[win_combination[1]] == "O" && board[win_combination[2]] == "O")
-        return win_combination
-      end
-    end
-    return false
-  end
+  WIN_COMBINATIONS.each do |win_combo|
+  if (board[win_combo[0]] == "X" && board[win_combo[1]] == "X" && board[win_combo[2]] == "X") ||
+     (board[win_combo[0]] == "O" && board[win_combo[1]] == "O" && board[win_combo[2]] == "O")
+     return win_combo
+   end
+ end
+     false
+   end
+ end
+
+ 
