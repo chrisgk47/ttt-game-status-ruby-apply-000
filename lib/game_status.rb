@@ -20,3 +20,11 @@ def won?(board)
  end
      false
    end
+
+def full?(board)
+  if board.include?(" ")
+    falsey
+  else
+    true
+  end
+end
