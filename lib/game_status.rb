@@ -43,7 +43,7 @@ def won?(board)
   position_7 = board[index_7]
   position_8 = board[index_8]
 
-  
+
 if position_1 == "X" && position_2 == "X" && position_3 == "X"
   return win_combo[0, 1, 2]
 elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
