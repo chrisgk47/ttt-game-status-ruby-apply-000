@@ -12,14 +12,14 @@ WIN_COMBINATIONS = [ [0, 1, 2], [3, 4, 5], [6, 7, 8], #rows
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 
-position_1 = board[win_index_1]
-position_2 = board[win_index_2]
-position_3 = board[win_index_3]
-position_4 = board[win_index_4]
-position_5 = board[win_index_5]
-position_6 = board[win_index_6]
-position_7 = board[win_index_7]
-position_8 = board[win_index_8]
+position_1 = board[index_1]
+position_2 = board[index_2]
+position_3 = board[index_3]
+position_4 = board[index_4]
+position_5 = board[index_5]
+position_6 = board[index_6]
+position_7 = board[index_7]
+position_8 = board[index_8]
 
 
 
