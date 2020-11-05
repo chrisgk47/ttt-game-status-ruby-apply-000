@@ -16,9 +16,9 @@ mid_row_win = [3, 4, 5]
 bot_row_win = [6, 7, 8]
 diag_row_win1 = [0, 4, 8]
 diag_row_win2 = [2, 4, 6]
-dleft_row_win = [0, 3, 6]
-dmid_row_win = [1, 4, 7]
-dright_row_win = [2, 5, 8]
+left__column = [0, 3, 6]
+mid_column_win = [1, 4, 7]
+right_column_win = [2, 5, 8]
 
 if board[top_row_win[0]] == "X" && board[top_row_win[1]] == "X" &&
   board[top_row_win[2]] == "X"
@@ -45,13 +45,13 @@ if board[diag_row_win2[2]] == "X" && board[diag_row_win2[4]] == "X" &&
   "X won diagonally"
 end
 
-if board[dleft_row_win1[0]] == "X" && board[dleft_row_win1[3]] == "X" &&
-  board[dleft_row_win1[6]] == "X"
+if board[left_column_win1[0]] == "X" && board[left_column_win1[3]] == "X" &&
+  board[left_column_win1[6]] == "X"
   "X won in the left row"
 end
 
-if board[dmid_row_win1[1]] == "X" && board[dmid_row_win1[4]] == "X" &&
-  board[dmid_row_win1[7]] == "X"
+if board[mid_column_win1[1]] == "X" && board[mid_column_win1[4]] == "X" &&
+  board[mid_column_win1[7]] == "X"
   "X won in the middle row"
 end
 
