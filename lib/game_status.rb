@@ -22,7 +22,7 @@ def won?(board)
    end
 
 def full?(board)
-  if board.include?(" ")
+  if board.include?(win_combinations)
     false
   else
     true
@@ -30,4 +30,12 @@ def full?(board)
 end
 
 def draw?(board)
-  if
+  if board.include?(" ")
+    false
+  elsif
+    board.include?(win_combo[0, 8])
+    false
+  else
+    true
+  end
+end
