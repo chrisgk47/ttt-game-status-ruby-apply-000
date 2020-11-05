@@ -30,12 +30,10 @@ def full?(board)
 end
 
 def draw?(board)
-  if board.include?(" ")
-    false
-  elsif
-    board.include?(win_combo[0, 8])
-    false
-  else
+  if ((won?(board) == false) && (full?(board) == true))
     true
+  else
+    false
   end
-end
+
+  
