@@ -30,4 +30,5 @@ elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
   return win_combo[0, 1, 2]
   end
   false
+  end
 end
